@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import addTwit from '../actions/addTwit';
+import addPost from '../actions/addPost';
 
-class TwitForm extends Component {
+class PostForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: this.props.twit ? this.props.twit.name : '',
-      id: this.props.twit ? this.props.twit.id : '',
+      name: this.props.post ? this.props.post.name : '',
+      id: this.props.post ? this.props.post.id : '',
     };
   }
 
   handleSubmit(event) {
+    debugger;
     event.preventDefault();
-    this.props.addTwit(this.state);
+    this.props.addPost(this.state);
 
     this.setState({ name: '', id: '' });
-    this.props.history.push('/twits');
+    this.props.history.push('/posts');
   }
 
   handleChange(event) {
@@ -46,4 +47,4 @@ class TwitForm extends Component {
   }
 }
 
-export default withRouter(connect(null, { addTwit })(TwitForm));
+export default withRouter(connect(null, { addPost })(PostForm));

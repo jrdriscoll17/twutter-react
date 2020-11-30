@@ -6,12 +6,12 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import App from './App';
-import twitReducer from './reducers/twitReducer';
+import postReducer from './reducers/postReducer';
 
-const initialState = { twits: [] };
+const initialState = { posts: [] };
 
 const store = createStore(
-  twitReducer,
+  postReducer,
   initialState,
   compose(applyMiddleware(thunk), composeWithDevTools())
 );

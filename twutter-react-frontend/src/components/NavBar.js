@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export default function NavBar(props) {
   return (
     <>
-      <Link to='/twits'>All Twits</Link>
-      <Link to='/twits/new'>New Twit</Link>
+      <Link to='/posts'>All Posts</Link>
+      <Link to='/posts/new'>New Post</Link>
     </>
   );
 }

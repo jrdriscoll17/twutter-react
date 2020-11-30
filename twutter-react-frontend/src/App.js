@@ -1,12 +1,12 @@
 import React from 'react';
-import TwitContainer from './components/TwitContainer';
+import PostContainer from './components/PostContainer';
 import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
       <NavBar />
-      <TwitContainer />
+      <PostContainer />
     </>
   );
 }
