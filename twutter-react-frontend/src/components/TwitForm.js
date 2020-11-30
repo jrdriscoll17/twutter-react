@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import addTwit from './actions/addTwit';
-import editTwit from './actions/editTwit';
+import addTwit from '../actions/addTwit';
 
 class TwitForm extends Component {
   constructor(props) {
@@ -14,13 +13,8 @@ class TwitForm extends Component {
   }
 
   handleSubmit(event) {
-    console.log('handlesubmit');
     event.preventDefault();
-    if (!this.props.twit) {
-      this.props.addTwit(this.state);
-    } else {
-      this.props.editTwit(this.state);
-    }
+    this.props.addTwit(this.state);
 
     this.setState({ name: '', id: '' });
     this.props.history.push('/twits');
@@ -52,4 +46,4 @@ class TwitForm extends Component {
   }
 }
 
-export default withRouter(connect(null, { addTwit, editTwit })(TwitForm));
+export default withRouter(connect(null, { addTwit })(TwitForm));
