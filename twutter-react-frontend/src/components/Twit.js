@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import deleteTwit from '../actions/deleteTwit';
 import TwitForm from './TwitForm';
 
-function List(props) {
+function Twit(props) {
   const handleDelete = () => {
     props.deleteTwit(props.twit.id);
     props.history.push('/twits');
@@ -20,4 +20,4 @@ function List(props) {
   );
 }
 
-export default connect(null, { deleteList })(List);
+export default connect(null, { deleteTwit })(Twit);
