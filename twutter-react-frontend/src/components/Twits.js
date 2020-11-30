@@ -1,5 +1,4 @@
 import React, { PureComponent, Fragment } from 'react';
-import Twit from './Twit';
 import { Link } from 'react-router-dom';
 
 class Twits extends PureComponent {
