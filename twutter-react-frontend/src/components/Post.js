@@ -9,15 +9,13 @@ function Post(props) {
   };
 
   return (
-    <>
-      <li>
-        {props.post.id}
-        <br />
-        {props.post.content}
-        <br />
-        <button onClick={handleDelete}>Delete</button>
-      </li>
-    </>
+    <li>
+      {props.post.id}
+      <br />
+      {props.post.content}
+      <br />
+      <button onClick={handleDelete}>Delete</button>
+    </li>
   );
 }
 
