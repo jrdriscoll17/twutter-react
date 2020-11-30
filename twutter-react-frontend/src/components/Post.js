@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import deletePost from '../actions/deletePost';
-import PostForm from './PostForm';
 
 function Post(props) {
   const handleDelete = () => {
@@ -12,10 +11,12 @@ function Post(props) {
   return (
     <>
       <li>
-        {props.post && props.post.name}{' '}
+        {props.post.id}
+        <br />
+        {props.post.content}
+        <br />
         <button onClick={handleDelete}>Delete</button>
       </li>
-      <PostForm post={props.post} />
     </>
   );
 }

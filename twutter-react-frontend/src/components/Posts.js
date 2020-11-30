@@ -6,12 +6,12 @@ class Posts extends PureComponent {
     return (
       <ul>
         {this.props.posts.map((post) => (
-          <>
-            <Link key={post.id}>
+          <li key={post.id}>
+            <Link to={`/posts/${post.id}`}>
               <h2>{post.id}</h2>
             </Link>
             <p>{post.content}</p>
-          </>
+          </li>
         ))}
       </ul>
     );
