@@ -6,6 +6,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import App from './App';
+import './App.css';
 import postReducer from './reducers/posts/postReducer';
 
 const initialState = { posts: [] };

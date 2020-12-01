@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 class Posts extends PureComponent {
   render() {
     return (
-      <ul>
+      <ul className='posts'>
         {this.props.posts.map((post) => (
-          <li key={post.id}>
+          <li key={post.id} className='post'>
             <Link to={`/posts/${post.id}`}>
               <h2>{post.user.name}</h2>
             </Link>

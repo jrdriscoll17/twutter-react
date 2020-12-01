@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+}
+div.root div.navbar a {
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;  
+  justify-content: left;
+  padding: 10px;
+
+}
+.navbar a{
+  padding-right: 10px;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  max-width: 350px;
+}
+.post {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 20px 20px 5px 5px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: gray;
+}
+h2, p{
+  background-color: gray;
+}
+h2{
+  color: black;
+}
