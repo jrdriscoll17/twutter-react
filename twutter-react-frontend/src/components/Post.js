@@ -10,9 +10,9 @@ function Post(props) {
 
   return (
     <li>
-      {props.post.id}
+      {props.post && props.post.id}
       <br />
-      {props.post.content}
+      {props.post && props.post.content}
       <br />
       <button onClick={handleDelete}>Delete</button>
     </li>
