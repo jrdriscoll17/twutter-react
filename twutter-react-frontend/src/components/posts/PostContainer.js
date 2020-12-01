@@ -17,11 +17,9 @@ class PostContainer extends PureComponent {
         <Route exact path='/posts'>
           <Posts posts={this.props.posts} />
         </Route>
-
         <Route exact path='/posts/new'>
           <PostForm />
         </Route>
-
         <Route
           exact
           path='/posts/:id'
