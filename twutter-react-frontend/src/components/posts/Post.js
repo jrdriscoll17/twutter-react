@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import deletePost from '../actions/deletePost';
+import deletePost from '../../actions/posts/deletePost';
 
 function Post(props) {
   const handleDelete = () => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import addPost from '../actions/addPost';
+import addPost from '../../actions/posts/addPost';
 
 class PostForm extends Component {
   state = {

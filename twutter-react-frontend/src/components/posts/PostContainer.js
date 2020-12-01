@@ -4,7 +4,7 @@ import Posts from './Posts';
 import PostForm from './PostForm';
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
-import fetchPosts from '../actions/fetchPosts';
+import fetchPosts from '../../actions/posts/fetchPosts';
 
 class PostContainer extends PureComponent {
   componentDidMount() {
